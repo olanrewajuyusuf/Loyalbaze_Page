@@ -368,7 +368,8 @@ footer .container .phone img {
     gap: 20px;
   }
   footer .container .address {
-    width: 50vw;
+    flex-direction: column;
+    width: 80vw;
     text-align: center;
   }
   .modal {
@@ -393,7 +394,6 @@ footer .container .phone img {
   }
   .ball-1 {
     top: 18%;
-    /* left: 1%; */
   }
   .star-5 {
     left: 1%;
