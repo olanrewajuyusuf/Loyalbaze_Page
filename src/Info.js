@@ -54,6 +54,7 @@ function Info() {
             value={info.name}
             onChange={handleChange}
             placeholder="Enter your full name"
+            required
           />
           <input
             type="email"
@@ -62,6 +63,7 @@ function Info() {
             value={info.email}
             onChange={handleChange}
             placeholder="Enter your work email"
+            required
           />
           <input
             type="number"
@@ -70,6 +72,7 @@ function Info() {
             value={info.phone}
             onChange={handleChange}
             placeholder="Mobile number"
+            required
           />
           <input
             type="text"
@@ -78,6 +81,7 @@ function Info() {
             value={info.company}
             onChange={handleChange}
             placeholder="Company name"
+            required
           />
           <div className="select-div">
             <select name="country" id="country">
