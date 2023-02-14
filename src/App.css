@@ -1,38 +1,370 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+body {
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Satoshi", sans-serif;
+}
 .App {
-  text-align: center;
+  background: #121b27;
+  width: 100%;
+  max-width: 1440px;
+  overflow-x: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header,
+.about,
+.data,
+.people,
+footer .container,
+footer .container .address {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+header {
+  justify-content: space-between;
+  padding: 50px 5vw;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button {
+  cursor: pointer;
+}
+.header-btn {
+  padding: 14px 16px;
+  color: #fcfcfc;
+  font-size: 16px;
+  background: linear-gradient(rgb(18, 27, 39), rgb(18, 27, 39)) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 100px;
+  border: 1px solid transparent;
+}
+.about {
+  width: 100%;
+  margin: 0 auto 150px;
+  text-align: center;
+  flex-direction: column;
+  padding: 80px 0;
+  position: relative;
+}
+.about h1 {
+  width: 65%;
+  color: #fff;
+  font-size: 64px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+.about h1 span {
+  color: #a75fd2;
+}
+.about p {
+  width: 65%;
+  font-size: 24px;
+  line-height: 130%;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 130%;
+}
+.about form {
+  width: 443px;
+  margin: 20px auto;
+}
+.about form div,
+.people {
+  position: relative;
+}
+.about form div img {
+  position: absolute;
+  top: 32%;
+  left: 4%;
+}
+.about form div .icon {
+  top: 35%;
+}
+.about form input {
+  width: 100%;
+  margin: 10px auto;
+  height: 52px;
+  padding: 14px 50px;
+  background: #121b27;
+  outline: 0;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+.access-btn,
+.send {
+  width: 100%;
+  background: linear-gradient(
+    112.92deg,
+    #5404ff 18.35%,
+    rgba(189, 59, 210, 0.94) 71.49%
+  );
+  border-radius: 100px;
+  padding: 14px 12px;
+  margin: 20px 0;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+.data {
+  color: #fff;
+}
+.people-data {
+  background: rgb(43, 43, 193);
+  width: 30px;
+  padding: 5px 0;
+  border-radius: 50%;
+  position: absolute;
+}
+.people-data:nth-child(1) {
+  z-index: 4;
+}
+.people-data:nth-child(2) {
+  right: 7px;
+  z-index: 3;
+  background: darkorchid;
+}
+.people-data:nth-child(3) {
+  right: 12px;
+  z-index: 2;
+}
+.people-data:nth-child(4) {
+  right: 17px;
+  background: darkorchid;
+}
+.ball {
+  background: linear-gradient(92.7deg, #5404ff 7.9%, #ba2ad1 88.1%);
+  box-shadow: inset 2px 4px 100px #001d6e;
+  position: absolute;
+  border-radius: 50%;
+}
+.ball-1 {
+  width: 15vw;
+  height: 15vw;
+  left: 20px;
+  top: 10%;
+}
+.ball-2 {
+  width: 150px;
+  height: 150px;
+  top: 7%;
+  filter: blur(120px);
+}
+.ball-3 {
+  width: 8vw;
+  height: 8vw;
+  right: 20%;
+  top: -6%;
+}
+.ball-4 {
+  width: 30vw;
+  height: 30vw;
+  right: -12%;
+  top: 30%;
+  filter: blur(15px);
+}
+.ball-5 {
+  width: 8vw;
+  height: 8vw;
+  top: 2%;
+  left: 8%;
+}
+.ball-6 {
+  width: 150px;
+  height: 150px;
+  left: 3%;
+  filter: blur(100px);
+  box-shadow: inset 1.02px 2.04px 51px #001d6e;
+}
+.star,
+.vector {
+  position: absolute;
+}
+.star-1 {
+  top: 5%;
+  left: 31%;
+}
+.star-2 {
+  top: 20%;
+  right: 15%;
+}
+.star-3,
+.star-4 {
+  width: 48px;
+  height: 64px;
+}
+.star-3 {
+  bottom: 5%;
+  left: 5%;
+}
+.star-4 {
+  bottom: 5%;
+  right: 10%;
+}
+.star-5 {
+  top: 20%;
+  left: 29%;
+}
+.star-6 {
+  bottom: 25%;
+  right: 50%;
+}
+.star-7 {
+  bottom: 2%;
+  right: 7%;
+}
+.star-8 {
+  top: 5%;
+  right: 50%;
+}
+.star-9 {
+  top: 0;
+  right: 10%;
+}
+.vector {
+  top: 53%;
+  right: 23%;
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  color: #fcfcfc;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+}
+.detail {
+  padding: 0 5vw;
+}
+.detail h2 {
+  font-size: 64px;
+}
+.detail .line {
+  margin-left: 25%;
+}
+.detail p {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.form-container {
+  padding: 50px 5vw;
+}
+.form-container form {
+  background: #1d2939;
+  border-radius: 20px;
+  padding: 50px;
+}
+.form-container form h3 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+.form-container form input,
+textarea,
+select {
+  background: transparent;
+  outline: 0;
+  width: 100%;
+  margin: 15px auto;
+  height: 52px;
+  border: 1px solid rgba(221, 221, 221, 0.5);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 15px;
+}
+.select-div {
+  width: 100%;
+}
+option {
+  background: #121b27;
+  color: #fcfcfc;
+}
+select::-webkit-scrollbar {
+  display: none;
+}
+::placeholder {
+  color: #fff;
+}
+textarea {
+  padding: 15px;
+  height: 130px;
+}
+footer {
+  padding: 0 5vw;
+}
+footer .container {
+  width: 100%;
+  border-top: 1px solid #fff;
+  color: #fff;
+  justify-content: space-between;
+  padding: 40px 20px 40px 0;
+}
+footer .container .address {
+  width: 22vw;
+}
+footer .container .address img {
+  margin: -20px 15px 0 0;
+}
+footer .container .loyal {
+  font-size: 20px;
+}
+footer .container .phone {
+  display: flex;
+}
+footer .container .phone img {
+  margin-right: 10px;
+}
+@media (max-width: 750px) {
+  .about form {
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+  .ball-3,
+  .star-8 {
+    top: 0;
+  }
+  .star-5 {
+    top: 13%;
+  }
+  .star-6 {
+    bottom: 0;
+    left: 2%;
+  }
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .detail .line {
+    margin: 0 auto;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .container .address {
+    width: 50vw;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .header-btn {
+    font-size: 10px;
+  }
+  .about form {
+    width: 80%;
+  }
+  .star-5 {
+    left: 1%;
   }
 }
