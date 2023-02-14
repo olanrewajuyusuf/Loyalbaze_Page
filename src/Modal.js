@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 
-const modalStyles = {};
-
 function Modal({ closeModal }) {
   useEffect(() => {
     setTimeout(() => {
