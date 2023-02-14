@@ -332,6 +332,10 @@ footer .container .phone img {
   border-radius: 20px;
 }
 @media (max-width: 750px) {
+  .about h1,
+  .about p {
+    width: 80%;
+  }
   .about form {
     width: 60%;
   }
@@ -373,9 +377,6 @@ footer .container .phone img {
   }
 }
 @media (max-width: 400px) {
-  .about h1 {
-    font-size: 40px;
-  }
   .logo {
     width: 200px;
   }
@@ -384,14 +385,22 @@ footer .container .phone img {
     margin-left: 20px;
     padding: 10px 16px;
   }
+  .about h1 {
+    font-size: 40px;
+  }
   .about form {
     width: 80%;
+  }
+  .ball-1 {
+    top: 18%;
+    /* left: 1%; */
   }
   .star-5 {
     left: 1%;
   }
   .vector {
-    width: 20vw;
+    width: 15vw;
+    top: 47%;
     right: 2%;
   }
   .vector img {
