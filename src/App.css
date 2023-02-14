@@ -320,6 +320,17 @@ footer .container .phone {
 footer .container .phone img {
   margin-right: 10px;
 }
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e1e1e;
+  width: 30%;
+  padding: 80px 40px;
+  text-align: center;
+  border-radius: 20px;
+}
 @media (max-width: 750px) {
   .about form {
     width: 60%;
@@ -356,15 +367,34 @@ footer .container .phone img {
     width: 50vw;
     text-align: center;
   }
+  .modal {
+    top: 70%;
+    width: 70%;
+  }
 }
 @media (max-width: 400px) {
+  .about h1 {
+    font-size: 40px;
+  }
+  .logo {
+    width: 200px;
+  }
   .header-btn {
     font-size: 10px;
+    margin-left: 20px;
+    padding: 10px 16px;
   }
   .about form {
     width: 80%;
   }
   .star-5 {
     left: 1%;
+  }
+  .vector {
+    width: 20vw;
+    right: 2%;
+  }
+  .vector img {
+    width: 100%;
   }
 }

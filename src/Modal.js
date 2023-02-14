@@ -1,16 +1,6 @@
 import { useEffect } from "react";
 
-const modalStyles = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  background: "#1E1E1E",
-  width: "30%",
-  padding: "80px 40px",
-  textAlign: "center",
-  borderRadius: 20,
-};
+const modalStyles = {};
 
 function Modal({ closeModal }) {
   useEffect(() => {
@@ -19,7 +9,7 @@ function Modal({ closeModal }) {
     }, 6000);
   });
   return (
-    <article style={modalStyles}>
+    <article className="modal">
       <div className="check" style={{ marginBottom: 30 }}>
         <img src="Group 243.png" alt="#" />
       </div>
